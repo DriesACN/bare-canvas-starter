@@ -14,12 +14,12 @@ const Index = () => {
               <span className="text-xl font-bold">Blank</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth">Features</a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth">About</a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-smooth">Contact</a>
+              <a href="/" className="text-foreground font-medium">Home</a>
+              <a href="/about" className="text-muted-foreground hover:text-foreground transition-smooth">About</a>
+              <a href="/contact" className="text-muted-foreground hover:text-foreground transition-smooth">Contact</a>
             </div>
             <Button variant="heroSecondary" size="sm">
-              Get Started
+              <a href="/contact">Get Started</a>
             </Button>
           </div>
         </div>
@@ -51,11 +51,13 @@ const Index = () => {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay">
               <Button variant="hero" size="lg" className="group">
-                Begin Creating
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <a href="/contact" className="flex items-center">
+                  Begin Creating
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
               <Button variant="heroSecondary" size="lg">
-                Learn More
+                <a href="/about">Learn More</a>
               </Button>
             </div>
           </div>
